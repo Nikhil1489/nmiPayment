@@ -1,0 +1,118 @@
+html {
+    font-family: 'Abel';
+}
+
+.pageTitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: "Domine" !important;
+}
+
+.form-group {
+    width: 290px;
+}
+
+.formInner {
+    font-family: 'Abel' !important;
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+#payButton {
+    width: 290px;
+    display: block;
+    margin: 20px auto;
+    height: 50px !important;
+    font-size: 20px;
+    background-color: #1CC48B;
+    border-color: #1CC48B;
+    box-shadow: 0 3px 10px #bbbbbb;
+}
+
+#payButton:hover {
+    background-color: #19C687;
+    border-color: #19C687;
+    box-shadow: 0 3px 4px #bbbbbb;
+}
+
+#payButton:active {
+    opacity: 0.7;
+}
+
+.checkboxLabel {
+    margin: 0 0 0 7px;
+}
+
+.payment-field {
+    border-radius: 2px;
+    width: 48%;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px #dddddd;
+    font-size: 16px;
+    transition: 200ms;
+}
+
+.payment-field input:focus {
+    border: 3px solid #1CC48B;
+    outline: none !important;
+}
+
+.payment-field:hover {
+    box-shadow: 0 2px 4px #dddddd;
+}
+
+.payment-field input {
+    border: 3px solid #FFFFFF;
+    width: 100%;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+#payment-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#ccnumber {
+    width: 100%;
+    font-size: 24px;
+}
+
+#ccexp,
+#cvv {
+    font-size: 20px;
+}
+
+#paymentTokenInfo {
+    width: 600px;
+    display: block;
+    margin: 30px auto;
+}
+
+.separator {
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .pageTitle {
+        font-size: 30px;
+    }
+
+    .theForm {
+        width: 300px;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+                

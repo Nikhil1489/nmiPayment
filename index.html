@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- COLLECT.JS INLINE -->
+    <script src="https://secure.nmi.com/token/Collect.js"
+        data-tokenization-key="5mN8N7-jhr55W-N22pxX-uAW2s9"></script>
+        <script src="./script.js"></script>
+</head>
+<body>
+    <h2 class="pageTitle"><span>Collect.js Inline Example</span></h2>
+
+    <form class="theForm" action="">
+        <input type="hidden" name="variant" value="inline">
+        <input type="hidden" name="amount" value="5.00">
+        <div class="formInner">
+            <div class="payment-field">
+                <input type="text" name="fname" placeholder="First Name" value="John" autofocus>
+            </div>
+            <div class="payment-field">
+                <input type="text" name="lname" placeholder="Last Name" value="Smith">
+            </div>
+            <div class="separator"></div>
+            <div id="payment-fields">
+                <div class="payment-field" id="ccnumber"></div>
+                <div class="payment-field" id="ccexp"></div>
+                <div class="payment-field" id="cvv"></div>
+            </div>
+        </div>
+        <button type="submit" id="payButton" class="btn btn-primary btn-block">
+            Pay $5
+        </button>
+    </form>
+    <div id="paymentTokenInfo"></div>
+</body>
+</html>
