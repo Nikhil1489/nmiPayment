@@ -2,6 +2,10 @@ html {
     font-family: 'Abel';
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .pageTitle {
     text-align: center;
     margin-top: 20px;
@@ -29,14 +33,15 @@ html {
     margin: 20px auto;
     height: 50px !important;
     font-size: 20px;
-    background-color: #1CC48B;
-    border-color: #1CC48B;
+    color: #fff;
+    background-color: #548B59;
+    border-color: #548B59;
     box-shadow: 0 3px 10px #bbbbbb;
 }
 
 #payButton:hover {
-    background-color: #19C687;
-    border-color: #19C687;
+    background-color: #548B59;
+    border-color: #548B59;
     box-shadow: 0 3px 4px #bbbbbb;
 }
 
@@ -49,16 +54,17 @@ html {
 }
 
 .payment-field {
-    border-radius: 2px;
+    border-radius: 6px;
     width: 48%;
     margin-bottom: 14px;
-    box-shadow: 0 2px 8px #dddddd;
     font-size: 16px;
     transition: 200ms;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
 }
 
 .payment-field input:focus {
-    border: 3px solid #1CC48B;
+    border: 3px solid #548B59;
     outline: none !important;
 }
 
@@ -71,6 +77,7 @@ html {
     width: 100%;
     border-radius: 2px;
     padding: 4px 8px;
+    height: 58px;
 }
 
 #payment-fields {
