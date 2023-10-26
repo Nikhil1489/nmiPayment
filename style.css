@@ -45,7 +45,7 @@ body{
 #payButton:hover {
     background-color: #548B59;
     border-color: #548B59;
-    box-shadow: 0 3px 4px #bbbbbb;
+    box-shadow: none;
 }
 
 #payButton:active {
