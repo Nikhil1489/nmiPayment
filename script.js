@@ -1,4 +1,15 @@
+
+function setPayment() {
+  let amount = parent.document.getElementById("amount_to_be_paid").innerText.substring(1);
+  let patientName = parent.document.getElementById("patient_name").innerText;
+  document.getElementById('fname').value = patientName;
+  document.getElementById('amount').value = amount;
+} 
+
 document.addEventListener('DOMContentLoaded', function () {
+
+  setPayment();
+
     CollectJS.configure({
       'callback': function (response) {
         document.getElementById("paymentTokenInfo").innerHTML =
@@ -43,4 +54,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     });
-  });  
+  }); 
