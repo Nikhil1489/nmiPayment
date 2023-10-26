@@ -12,20 +12,25 @@
     <script src="https://secure.nmi.com/token/Collect.js" data-tokenization-key="5mN8N7-jhr55W-N22pxX-uAW2s9"></script>
     <script src="./script.js"></script>
     <script>
-        console.log('amount', parent.document.getElementById("amount_to_be_paid").innerText.substring(1));
+        function setPayment() {
+            let amount = parent.document.getElementById("amount_to_be_paid").innerText.substring(1);
+            let patientName = parent.document.getElementById("patient_name").innerText;
+            document.getElementById('fname').value = patientName;
+            document.getElementById('amount').value = amount;
+        }
     </script>
 </head>
 
-<body>
+<body onload="setPayment()">
     <form class="theForm" action="">
         <input type="hidden" name="variant" value="inline">
-        <input type="hidden" name="amount" value="5.00">
+        <input id="amount" type="hidden" name="amount" value="">
         <div class="formInner">
 
             <div class="payment_row">
                 <label>Name on Card</label>
                 <div class="payment-field name_field">
-                    <input type="text" name="fname" placeholder="Enter your answer" value="John" autofocus>
+                    <input id="fname" type="text" name="fname" placeholder="Enter your answer" value="" autofocus>
                 </div>
             </div>
 
@@ -48,7 +53,7 @@
             </div>
         </div>
         <button type="submit" id="payButton" class="btn btn-primary btn-block">
-            Pay $5
+            PAY NOW
         </button>
     </form>
     <div id="paymentTokenInfo"></div>
