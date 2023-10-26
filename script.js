@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       fields: {
         cvv: {
-          placeholder: 'CVV'
+          placeholder: ''
         },
         ccnumber: {
-            placeholder: 'Credit Card'
+            placeholder: 'Enter your answer'
         },
         ccexp: {
             placeholder: 'MM / YY'
