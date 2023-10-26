@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
           '<br><b>Check Routing Number:</b> ' + response.check.aba;
       },
       variant: 'inline',
-      googleFont: 'Abel',
+      googleFont: 'Poppins',
       invalidCss: {
-        color: '#B40E3E'
+        color: '#FF3838'
       },
       validCss: {
         color: '#14855F'
@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'border-style': 'solid'
       },
       focusCss: {
-        'border-color': '#1CC48B',
+        'border-color': '#548B59',
         'border-style': 'solid',
-        'border-width': '3px'
+        'border-width': '1px',
+        'box-shadow': '0px 4px 4px 0px rgba(84, 139, 89, 0.20)'
       },
       fields: {
         cvv: {

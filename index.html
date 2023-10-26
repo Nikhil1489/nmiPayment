@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <!-- COLLECT.JS INLINE -->
     <script src="https://secure.nmi.com/token/Collect.js" data-tokenization-key="5mN8N7-jhr55W-N22pxX-uAW2s9"></script>
@@ -15,22 +18,29 @@
         <input type="hidden" name="variant" value="inline">
         <input type="hidden" name="amount" value="5.00">
         <div class="formInner">
-            <div class="payment-field">
-                <label>Name on Card</label>
-                <input type="text" name="fname" placeholder="Enter your answer" value="John" autofocus>
-            </div>
-            <div class="separator"></div>
-            <div id="payment-fields">
-                <label>Card Number</label>
-                <div class="payment-field" id="ccnumber"></div>
 
-                <div>
-                    <label>Expiry Date</label>
-                    <div class="payment-field" id="ccexp"></div>
+            <div class="payment_row">
+                <label>Name on Card</label>
+                <div class="payment-field name_field">
+                    <input type="text" name="fname" placeholder="Enter your answer" value="John" autofocus>
                 </div>
-                <div>
-                    <label>CVV</label>
-                    <div class="payment-field" id="cvv"></div>
+            </div>
+
+            <div id="payment-fields">
+                <div class="payment_row">
+                    <label>Card Number</label>
+                    <div class="payment-field" id="ccnumber"></div>
+                </div>
+
+                <div class="payment_row">
+                    <div class="bottom_fields">
+                        <label>Expiry Date</label>
+                        <div class="payment-field" id="ccexp"></div>
+                    </div>
+                    <div class="bottom_fields">
+                        <label>CVV</label>
+                        <div class="payment-field" id="cvv"></div>
+                    </div>
                 </div>
             </div>
         </div>
