@@ -8,8 +8,6 @@ function setPayment() {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  setPayment();
-
     CollectJS.configure({
       'callback': function (response) {
         document.getElementById("paymentTokenInfo").innerHTML =
@@ -55,3 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }); 
+
+  document.addEventListener('DOMContentLoaded', function () {
+    setPayment();
+  });
